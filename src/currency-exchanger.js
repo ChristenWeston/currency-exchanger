@@ -1,5 +1,5 @@
 export default class CurrencyExchanger {
-  static getConversion(usd, currency) {
+  static convertDollarsToCurrency(usd, currency) {
     return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/EUR/${currency}`)
     .then(function(response) {
       if (!response.ok) {
