@@ -7,7 +7,7 @@ function displayResults(response) {
   if (response.base_code) {
     $('.converted-currency').text(`Converted Currency Rate: ${response.conversion_rate}`);
   } else {
-    $('.error').text(`Problem!: ${Error.message}`);
+    $('.error').text(`Problem!: ${Error.message} this means ${response.result}`);
   }
 }
 
