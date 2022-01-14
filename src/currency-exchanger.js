@@ -1,10 +1,10 @@
 export default class CurrencyExchanger {
-  static convertDollarsToCurrency(usd, currency) {
-    return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/EUR/${currency}`)
+  static getConversionRate(currency) {
+    return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/UD/${currency}`)
     .then(function(response) {
       if (!response.ok) {
         //response.statusText
-        throw Error(response.error-type);
+        throw Error(response.statusText);
       }
       return response.json();
     })
@@ -12,4 +12,7 @@ export default class CurrencyExchanger {
       return error;
     });
   }
+
+
 }
+
