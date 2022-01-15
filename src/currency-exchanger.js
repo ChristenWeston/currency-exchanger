@@ -1,6 +1,6 @@
 export default class CurrencyExchanger {
   static getConversionRate(currency) {
-    return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/UD/${currency}`)
+    return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/USD/${currency}`)
     .then(function(response) {
       if (!response.ok) {
         //response.statusText
@@ -13,6 +13,12 @@ export default class CurrencyExchanger {
     });
   }
 
+  //static convertCurrency(dollars, response) {
+  //  let conversionRate = parseFloat(response.conversion_rate);
+    //console.log("Conversion rate: " + conversionRate);
+  //  let convertedAmount = parseFloat((dollars * conversionRate).toFixed(2));
+  //  return convertedAmount;
+//  }
 
 }
 

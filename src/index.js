@@ -13,12 +13,13 @@ function displayResults(response) {
 
 $(document).ready(function() {
   $('#currency').click(function() {
-    //let dollars = parseInt($('#usd').val());
+  //  let dollars = parseInt($('#usd').val());
     let currency = $('#currency').val();
 
     CurrencyExchanger.getConversionRate(currency)
       .then(function(response) {
-      //CurrencyExchanger.convertCurrency(response)
+     // let convertedAmount = CurrencyExchanger.convertCurrency(dollars, response);
+  //    console.log("Converted Amount: " + convertedAmount);
         displayResults(response);
       });
   });
