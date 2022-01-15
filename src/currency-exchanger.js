@@ -13,12 +13,10 @@ export default class CurrencyExchanger {
     });
   }
 
-  //static convertCurrency(dollars, response) {
-  //  let conversionRate = parseFloat(response.conversion_rate);
-    //console.log("Conversion rate: " + conversionRate);
-  //  let convertedAmount = parseFloat((dollars * conversionRate).toFixed(2));
-  //  return convertedAmount;
-//  }
-
+  static convertCurrency(dollars, response) {
+    let conversionRate = parseFloat(response.conversion_rate);
+    let convertedAmount = parseFloat((dollars * conversionRate).toFixed(2));
+    return convertedAmount;
+  }
 }
 
