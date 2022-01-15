@@ -8,3 +8,28 @@ body {
   background-position: center;
   padding: 2px;
 }
+
+.container {
+  font-size: 20px;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0);
+  min-width: 0;
+  max-width: 300px;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border-radius: 0.4rem;
+  margin-top: 100px;
+  margin-left: 90px;
+  padding: 2px;
+  border: 2px solid rgba(238, 225, 225, 0.125);
+  color: black;
+  height: 425px;
+}
+
+label{
+  color: black;
+}
+
+.converted-currency .results .dollars .error {
+  color: black;
+}
