@@ -23,7 +23,6 @@ $(document).ready(function() {
     CurrencyExchanger.getConversionRate(currency)
       .then(function(response) {
       let convertedAmount = CurrencyExchanger.convertCurrency(dollars, response);
-      console.log("Converted Amount: " + convertedAmount);
         displayResults(response, convertedAmount, dollars);
       });
   });
