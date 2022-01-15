@@ -1,0 +1,10 @@
+body {
+  background-image: url("../img/catMoney.jpg");
+  background-size:cover;
+  background-color: rgb(220, 242, 248);
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgba(242, 242, 250, 0.007);
+  background-position: center;
+  padding: 2px;
+}
