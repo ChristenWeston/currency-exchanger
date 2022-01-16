@@ -16,9 +16,11 @@ function displayResults(response, convertedAmount, dollars) {
 }
 
 $(document).ready(function() {
-  $('#currency').click(function() {
+  $('#currency').click(function(event) {
+    event.preventDefault();
     let dollars = parseInt($('#usd').val());
     let currency = $('#currency').val();
+    $(".results").show();
 
     CurrencyExchanger.getConversionRate(currency)
       .then(function(response) {

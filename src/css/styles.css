@@ -18,7 +18,7 @@ body {
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.4rem;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 90px;
   padding: 2px;
   border: 2px solid rgba(238, 225, 225, 0.125);
@@ -33,10 +33,23 @@ label{
 }
 
 .converted-currency .results .dollars .error {
+  text-align: center;
   color: black;
 }
 
 .converted-currency .form-control {
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+h3 {
+  color: rgba(94, 202, 139, 0.952);
+  text-align: center;
+  font-size: 70px;
+  text-shadow: 0 0 10px rgba(96, 206, 105, 0.849), 0 0 20px #fff, 0 0 30px #00e668;
+}
+
+.results {
+  display: none;
 }
