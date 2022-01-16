@@ -11,7 +11,7 @@ function displayResults(response, convertedAmount, dollars) {
     $('.converted-equals').text(convertedAmount);
     $('.converted-currency').text(`Converted Currency Rate: ${response.conversion_rate}`);
   } else {
-    $('.error').text(`Problem!: ${Error.message} this means ${response.result}`);
+    $('.error').text(`Sorry! There was an ${response} of  ${Error.message}`);
   }
 }
 
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     CurrencyExchanger.getConversionRate(currency)
       .then(function(response) {
-      let convertedAmount = CurrencyExchanger.convertCurrency(dollars, response);
+        let convertedAmount = CurrencyExchanger.convertCurrency(dollars, response);
         displayResults(response, convertedAmount, dollars);
       });
   });
