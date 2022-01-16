@@ -14,7 +14,7 @@ body {
   text-align: left;
   background-color: rgba(255, 255, 255, 0);
   min-width: 0;
-  max-width: 300px;
+  max-width: 310px;
   word-wrap: break-word;
   background-clip: border-box;
   border-radius: 0.4rem;
@@ -28,8 +28,15 @@ body {
 
 label{
   color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .converted-currency .results .dollars .error {
   color: black;
+}
+
+.converted-currency .form-control {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
