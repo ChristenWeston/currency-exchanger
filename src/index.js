@@ -15,12 +15,6 @@ function displayResults(response, convertedAmount, dollars) {
   }
 }
 
-function currencySymbol(currency) {
-  let symbols = {
-    
-  }
-}
-
 $(document).ready(function() {
   $('#currency').click(function() {
     let dollars = parseInt($('#usd').val());
