@@ -20,7 +20,8 @@
 
 1. Clone the Portfolio repository
 2. Open in your favorite IDE
-3. Obtain an API Key from https://www.exchangerate-api.com/ and add it to an .env file in this project
+3. Obtain an API Key from https://www.exchangerate-api.com/ and add it to an .env file* in this project. 
+   *Ensure that you have added it to your .env file in this format: API_KEY={your api key} 
 4. Run 'npm install' (at the root level of the project)
 5. Run 'npm run build' (at the root level of the project)
 6. Run 'npm run start' to see the project (at the root level of the project)
